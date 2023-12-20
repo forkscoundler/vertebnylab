@@ -1,0 +1,10 @@
+# Use the official Jenkins master image
+FROM jenkins/jenkins:2.361.1-lts-centos7
+
+USER root
+
+# Install utilities
+RUN yum install -y rpm-build rpmdevtools wget unzip rpmdev-setuptree \
+    && rm -rf /var/cache/yum/* && yum clean all
+
+WORKDIR /var/jenkins_home
