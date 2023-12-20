@@ -5,8 +5,8 @@ Summary:        A simple script to calculate files in a directory
 Requires:       unzip
 
 License:        MIT
-URL:            https://github.com/ooziava/lwsp-os
-Source0:        https://github.com/ooziava/lwsp-os/archive/main.zip
+URL:            https://github.com/forkscoundler/vertebnylab
+Source0:        https://github.com/forkscoundler/vertebnylab/archive/main.zip
 
 BuildArch:      noarch
 
@@ -15,15 +15,15 @@ calculate_files.sh is a simple script that calculates the number of files in a d
 
 %prep
 unzip %SOURCE0
-cd lwsp-os-main
+cd vertebnylab-main
 
 %install
 mkdir -p %{buildroot}/usr/bin
-install -m 755 %{_builddir}/lwsp-os-main/calculate_files.sh %{buildroot}/usr/bin/calculate_files
+install -m 755 %{_builddir}/vertebnylab-main/calculate_files.sh %{buildroot}/usr/bin/calculate_files
 
 %files
 /usr/bin/calculate_files
 
 %changelog
-* Sun Dec 03 2023 Oziava Oleh <oleg.mikros@gmail.com> - 1.0-1
+* Sun Dec 20 2023 Vertebny Ivan <vanya.vertebny.0205@gmail.com> - 1.0-1
 - Initial build
