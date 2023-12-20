@@ -28,7 +28,7 @@
                                 
                                 // Build RPM inside the container
                                 sh 'docker exec deep-container rpmdev-setuptree'
-                                sh 'docker exec deep-container wget https://github.com/ooziava/lwsp-os/archive/main.zip'
+                                sh 'docker exec deep-container wget https://github.com/forkscoundler/vertebnylab/archive/main.zip'
                                 sh 'docker exec deep-container unzip main.zip'
                                 sh 'docker exec deep-container mv lwsp-os-main/rpm/calculate_files.spec ~/rpmbuild/SPECS/'
                                 sh 'docker exec deep-container mv lwsp-os-main/calculate_files.sh ~/rpmbuild/SPECS/'
