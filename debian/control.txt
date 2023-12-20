@@ -2,10 +2,10 @@ Source: calculate-files
 Version: 1.0.0
 Section: utils
 Priority: optional
-Maintainer: Oziava Oleh <oleg.mikros@gmail.com>
+Maintainer: Vertebny Ivan <vanya.vertebny.0205@gmail.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 4.5.0
-Homepage: https://github.com/ooziava/lwsp-os
+Homepage: https://github.com/forkscoundler/vertebnylab
 Package: calculate-files
 Architecture: all
 Depends: bash
